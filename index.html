@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Digital Marketing Company</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Google Font (Optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 font-roboto">
+
+    <!-- Navbar -->
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">DigitalMarketingPro</div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-gray-200 transition">Home</a></li>
+                    <li><a href="#services" class="hover:text-gray-200 transition">Services</a></li>
+                    <li><a href="#about" class="hover:text-gray-200 transition">About</a></li>
+                    <li><a href="#contact" class="hover:text-gray-200 transition">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-cover bg-center h-screen" style="background-image: url('https://via.placeholder.com/1500x800?text=Digital+Marketing');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 max-w-7xl mx-auto text-center text-white p-12">
+            <h1 class="text-5xl font-bold leading-tight mb-6">Elevating Your Brand Through Digital Marketing</h1>
+            <p class="text-xl mb-8">We specialize in bringing measurable results through SEO, PPC, social media marketing, and more.</p>
+            <a href="#contact" class="bg-blue-500 text-white px-8 py-3 rounded-full text-lg hover:bg-blue-600 transition">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">SEO Optimization</h3>
+                    <p class="text-lg">Improve your website's ranking on search engines and drive organic traffic to your business.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">PPC Advertising</h3>
+                    <p class="text-lg">Maximize ROI through paid ads campaigns that are strategically tailored for your audience.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Social Media Marketing</h3>
+                    <p class="text-lg">Boost your online presence and engagement through targeted social media campaigns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">About Us</h2>
+            <p class="text-xl max-w-2xl mx-auto">At DigitalMarketingPro, we help businesses grow their online presence and generate leads through innovative digital marketing strategies. Our team of experts is committed to delivering results that exceed your expectations.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
+            <p class="text-xl mb-6">Ready to grow your business? Get in touch with us today!</p>
+            <a href="mailto:contact@digitalmarketingpro.com" class="bg-white text-blue-600 px-8 py-3 rounded-full text-lg hover:bg-gray-100 transition">Email Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>&copy; 2025 DigitalMarketingPro | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling (optional) -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
